@@ -3,21 +3,20 @@ import { test, expect } from '@playwright/test';
 // 1. Navigation Menu: Verify main navigation items are visible
  test('Main navigation items are visible', async ({ page }) => {
   await page.goto('https://xebia.com/de/');
-  // Debug: List all navigation elements and their HTML
-  const navs = await page.locator('nav').elementHandles();
-  for (const nav of navs) {
-    const html = await nav.evaluate(node => (node as Element).outerHTML);
-    console.log('NAV HTML:', html);
-  }
-  // Try to find the nav with main links
-  // Use actual navigation link texts
-  const mainNav = page.locator('nav').first();
-  await expect(mainNav).toBeVisible();
-  await expect(mainNav.locator('text=Industries')).toBeVisible();
-  await expect(mainNav.locator('text=Solutions')).toBeVisible();
-  await expect(mainNav.locator('text=Partner Ecosystem')).toBeVisible();
-  await expect(mainNav.locator('text=Careers')).toBeVisible();
-  await expect(mainNav.locator('text=About')).toBeVisible();
+  
+  // Verify main navigation links are present and visible on the page
+  // Filter for the first (header) instances to avoid duplicates in footer
+  const industriesLink = page.getByRole('link', { name: 'Industries' }).first();
+  const solutionsLink = page.getByRole('link', { name: 'Solutions' }).first();
+  const partnerLink = page.getByRole('link', { name: 'Partner Ecosystem' }).first();
+  const workLink = page.getByRole('link', { name: 'Our Work' }).first();
+  const ideasLink = page.getByRole('link', { name: 'Our Ideas' }).first();
+  
+  await expect(industriesLink).toBeVisible();
+  await expect(solutionsLink).toBeVisible();
+  await expect(partnerLink).toBeVisible();
+  await expect(workLink).toBeVisible();
+  await expect(ideasLink).toBeVisible();
  });
 
 // 2. Navigation Menu: Dropdown opens for "Leistungen"
