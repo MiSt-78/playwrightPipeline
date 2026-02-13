@@ -1,0 +1,275 @@
+XEBIA.COM - FUNCTIONAL USE CASES FOR AUTOMATED TESTING
+========================================================
+
+1. VERIFY HOMEPAGE BANNER LINKS NAVIGATION
+
+Priority: Priority 1
+
+User Story: As a website visitor, I want to verify that all main banner navigation links on the homepage work correctly so that I can access all major sections of the website.
+
+UI Examples / References:
+- Header navigation links: Industries, Solutions, Partner Ecosystem, Our Work, Our Ideas
+- CTA button: "Partner with us to shape a better tomorrow"
+- Footer links: Home, About Us, Contact Us, Careers, Life at Xebia
+
+Acceptance Criteria:
+- Given I am on the Xebia homepage, when I click the "Industries" link in the header, then the page navigates to the Industries section.
+- Given I am on the Xebia homepage, when I click the "Solutions" link in the header, then the page navigates to the Solutions page.
+- Given I am on the Xebia homepage, when I click the "Our Work" link in the header, then the page navigates to the customer stories page.
+- Given I am on the Xebia homepage, when I click the "Our Ideas" link in the header, then the page navigates to the insights and resources page.
+- Given I am on the Xebia homepage, when I click the "Contact" button, then the page navigates to the contact form page.
+
+
+2. NAVIGATE THROUGH MAIN CONTENT SECTIONS
+
+Priority: Priority 1
+
+User Story: As a site visitor, I want to navigate through the main content sections so that I can explore Xebia's core service offerings.
+
+UI Examples / References:
+- Section titles: "Unlock the AI-Enabled Enterprise", "Activate Automation at Scale", "Modernize the Digital Core"
+- "Explore More" buttons under each section
+- Links to specific solutions: AI-Native Engineering, Scaled GenAI, Intelligent Automation
+
+Acceptance Criteria:
+- Given I am on the homepage, when I scroll to the "Unlock the AI-Enabled Enterprise" section and click "Explore More", then I am taken to the AI solution page.
+- Given I am on the homepage, when I scroll to the "Activate Automation at Scale" section and click "Explore More", then I am taken to the Intelligent Automation page.
+- Given I am on the homepage, when I scroll to the "Modernize the Digital Core" section and click "Explore More", then I am taken to the data and cloud page.
+
+
+3. ACCESS INDUSTRIES SECTION AND BROWSE CATEGORIES
+
+Priority: Priority 2
+
+User Story: As a business stakeholder, I want to browse industry-specific solutions so that I can find information relevant to my sector.
+
+UI Examples / References:
+- Industry categories: Banking and Financial Services, Healthcare and Life Sciences, Insurance, ISV and Technology, Media and Entertainment, Professional Services, Retail and Consumer Goods
+- Industry filter options
+- "Tailored Expertise for Every Industry" heading
+
+Acceptance Criteria:
+- Given I navigate to the Industries page, when the page loads, then all main industry categories are visible and clickable.
+- Given I click on the "Banking and Financial Services" industry link, then the industry detail page loads with relevant information.
+- Given I am on the Industries page, when I click on "Insurance" category, then the page displays insurance-specific solutions and case studies.
+
+
+4. EXPLORE SOLUTIONS AND FILTER OPTIONS
+
+Priority: Priority 2
+
+User Story: As a decision maker, I want to explore and filter available solutions so that I can identify offerings that match my business needs.
+
+UI Examples / References:
+- Solution listing grid: "360 Customer Service Solution", "Agentic AI Assistant", "Agentic Banking Suite", "Agentic Data Pipeline Migrator"
+- Filter buttons: Capabilities, Industry, Partner
+- Pagination controls: Previous, Next, page numbers 1-9
+- Solution description cards
+
+Acceptance Criteria:
+- Given I am on the Solutions page, when I view the solution listing, then at least 10 solutions are displayed with descriptions.
+- Given I am on the Solutions page, when I click the "Capabilities" filter button, then I can filter solutions by capability type.
+- Given I am on the Solutions page, when I use the pagination controls to navigate, then I can view all available solutions across multiple pages.
+- Given I click on a specific solution tile like "Agentic AI Assistant", then the solution detail page loads with full information.
+
+
+5. VIEW AND NAVIGATE CUSTOMER STORIES
+
+Priority: Priority 2
+
+User Story: As a prospective client, I want to browse customer success stories so that I can understand how Xebia has solved business challenges for similar organizations.
+
+UI Examples / References:
+- Customer story titles: "How MarvelX Built a Secure, Scalable Cloud Foundation", "Navigating NIS2 compliance", "NIBC Bank Modernized Master Data Management"
+- Story filter options: Capabilities, Industry, Partner, Region
+- "Our Work" section heading
+- Customer story cards with descriptions
+
+Acceptance Criteria:
+- Given I navigate to the "Our Work" or "Customer Stories" page, when the page loads, then at least 12 customer story cards are displayed.
+- Given I click on a customer story card, then the full story page opens with case study details and outcomes.
+- Given I use the filter options on the customer stories page, when I filter by Industry, then the displayed stories are filtered accordingly.
+
+
+6. ACCESS AND BROWSE INSIGHTS CONTENT
+
+Priority: Priority 2
+
+User Story: As a knowledge seeker, I want to access and browse Xebia's insights, articles, and resources so that I can stay informed about industry trends and solutions.
+
+UI Examples / References:
+- Content categories: Articles, News, Blogs, Podcasts, Books, Events, Webinars
+- Recent content items: "OutSystems ONE 2025 Recap", "Digital Sovereignty in the Cloud" webinar
+- "See All" links for each content type
+- Subscription option to newsletters
+
+Acceptance Criteria:
+- Given I navigate to the "Our Ideas" page, when the page loads, then I can see sections for Articles, News, Blogs, Podcasts, and Books.
+- Given I click "See All" under the Articles section, then I am taken to the full articles listing page.
+- Given I click on a blog post title like "From Code to Crowd - Yuliya's Journey as a Speaker", then the full blog post opens.
+- Given I scroll to the newsletter signup section, when I see the subscription form, then I can enter an email to subscribe.
+
+
+7. SEARCH FOR ARTICLES AND CONTENT
+
+Priority: Priority 2
+
+User Story: As a visitor looking for specific information, I want to search for articles and content so that I can quickly find topics relevant to my interests.
+
+UI Examples / References:
+- Search functionality (if available)
+- Article tags or categories
+- Content filtering options
+- "Search Is In Everything You Build" podcast link
+
+Acceptance Criteria:
+- Given I am on the articles page, when I use any search or filter functionality available, then I can narrow down results to specific topics.
+- Given I search for content related to AI or automation, then relevant articles and resources are returned in the results.
+
+
+8. VERIFY SOCIAL MEDIA AND EXTERNAL LINKS
+
+Priority: Priority 2
+
+User Story: As a user interested in Xebia's community, I want to access Xebia's social media profiles so that I can connect with and follow the company.
+
+UI Examples / References:
+- Social media icons in footer: LinkedIn, GitHub, X (Twitter), Facebook, YouTube, Instagram
+- Footer heading: "Connect with Us"
+- Social media links throughout the site
+
+Acceptance Criteria:
+- Given I scroll to the footer on any page, when I click the LinkedIn icon, then I am taken to Xebia's LinkedIn profile in a new tab.
+- Given I click the GitHub icon in the footer, then I am taken to Xebia's GitHub organization page.
+- Given I click the YouTube icon, then I am taken to Xebia's YouTube channel (@XebiaGlobal).
+- Given I click the X (Twitter) icon, then I am taken to Xebia's X profile (@Xebia_Global).
+
+
+9. VERIFY FOOTER LEGAL AND COMPLIANCE LINKS
+
+Priority: Priority 1
+
+User Story: As a compliance-conscious visitor, I want to access legal, privacy, and accessibility information so that I can understand Xebia's compliance policies and commitments.
+
+UI Examples / References:
+- Footer links: Privacy Statement, Cookie Statement, Accessibility Statement, Legal, Accreditations
+- "Additional Links" section in footer
+- Copyright information: "© 2025 Xebia. All Rights Reserved"
+
+Acceptance Criteria:
+- Given I scroll to the footer, when I click "Privacy Statement", then the privacy policy page opens with complete information.
+- Given I click the "Accessibility Statement" link, then the accessibility policy page loads.
+- Given I click the "Cookie Statement" link, then the cookie policy page displays cookie usage information.
+- Given I click the "Legal" link, then the legal information page is displayed.
+
+
+10. TEST CAREERS PAGE AND JOB BOARD NAVIGATION
+
+Priority: Priority 2
+
+User Story: As a job seeker, I want to explore career opportunities at Xebia so that I can view open positions and learn about the company culture.
+
+UI Examples / References:
+- Heading: "Become a Xebian"
+- Statistics: "4 years" (Great Place to Work), "16" countries, "28 offices worldwide", "5.5k+" workforce
+- Job board links: Americas, Europe, APAC, LATAM, Middle East, Poland & Eastern Europe
+- Sections: Mission Values & Principles, Life at Xebia, Diversity & Inclusion, Our Locations
+
+Acceptance Criteria:
+- Given I navigate to the Careers page, when the page loads, then company statistics and culture information are displayed.
+- Given I click the "Europe" job board link, then I am taken to the European job listings page.
+- Given I click the "Americas" job board link, then I am taken to the Americas job board in a new tab.
+- Given I click on "Life at Xebia" section, then information about company culture and employee experience is displayed.
+
+
+11. VERIFY PARTNER ECOSYSTEM PAGE
+
+Priority: Priority 2
+
+User Story: As a partner or client evaluating integrations, I want to view Xebia's partner ecosystem so that I can understand available technology partnerships and integrations.
+
+UI Examples / References:
+- Partner logos: Appian, AWS, Databricks, DBT, GitHub, Google Cloud, Mendix, Microsoft, OutSystems, Salesforce
+- "View All" button in the Partner Ecosystem section
+- Partner categories or filters (if available)
+- Partner cards with links
+
+Acceptance Criteria:
+- Given I navigate to the Partners page, when the page loads, then partner logos and cards are displayed.
+- Given I click on the "AWS" partner card, then the AWS partnership page loads with details.
+- Given I click on "Microsoft" partner link, then the Microsoft partnership information page is displayed.
+- Given I click the "View All" link in the partner section, then all available partners are shown.
+
+
+12. NAVIGATE ABOUT US AND LEADERSHIP PAGES
+
+Priority: Priority 2
+
+User Story: As someone evaluating Xebia as a potential partner, I want to learn about company leadership and history so that I can understand the organization's credibility and expertise.
+
+UI Examples / References:
+- Heading: "Why Xebia", "End-to-End Trusted Partner for the AI Era", "Local Expertise, with Global Scale"
+- Key statistics: "Decades of experience", "16 countries", "Global best practices"
+- Subsections: Leadership, Team, Company History
+- Leadership team navigation links
+
+Acceptance Criteria:
+- Given I navigate to the About Us page, when the page loads, then company overview and value propositions are displayed.
+- Given I click the "Leadership" link, then the leadership team page opens showing key executives.
+- Given I view the company differentiators section, then I can see highlights of Xebia's unique value propositions.
+
+
+13. TEST CONTACT FORM SUBMISSION
+
+Priority: Priority 1
+
+User Story: As a potential client, I want to submit a contact form so that I can request more information or schedule a conversation with Xebia.
+
+UI Examples / References:
+- Page heading: "Get in touch"
+- Contact form fields (email, company name, inquiry type, message)
+- Submit button
+- "Let's discuss how we can support your journey" heading
+
+Acceptance Criteria:
+- Given I navigate to the Contact Us page, when the page loads, then a contact form is visible with required fields.
+- Given I fill in the contact form with valid information, when I click the Submit button, then the form is successfully submitted and a confirmation message appears.
+- Given I attempt to submit the form with incomplete required fields, when I click Submit, then validation error messages are displayed.
+- Given I submit the form successfully, then I should be redirected or receive a confirmation that the message was sent.
+
+
+14. VERIFY HOMEPAGE VIDEO AND MEDIA ELEMENTS
+
+Priority: Priority 2
+
+User Story: As a visitor, I want to view media content including videos on the homepage so that I can quickly understand Xebia's value proposition through multimedia.
+
+UI Examples / References:
+- Hero section: "Shaping Tomorrow with AI Today™"
+- Video player with "Watch 1:00" duration indicator
+- Featured images and visual elements
+- Multiple image placeholders [Image: Image]
+
+Acceptance Criteria:
+- Given I am on the homepage, when I view the hero section, then a video is displayed with a play button.
+- Given I click the play button on the homepage video, then the video player opens and plays.
+- Given I scroll through the page, when I reach sections with featured images, then images load and display correctly.
+
+
+15. TEST NEWSLETTER SUBSCRIPTION
+
+Priority: Priority 2
+
+User Story: As an interested reader, I want to subscribe to Xebia's newsletters so that I can receive regular updates on industry insights and company news.
+
+UI Examples / References:
+- Section heading: "Global Insights What's Shaping the Future of Technology?"
+- Subscription form with email input
+- "View Archive" link
+- Newsletter call-to-action buttons
+
+Acceptance Criteria:
+- Given I navigate to the Our Ideas page or find a newsletter subscription section, when I view the newsletter signup area, then an email subscription form is visible.
+- Given I enter a valid email address and click Subscribe, when the form is submitted, then a confirmation message appears.
+- Given I click the "View Archive" link, then I am taken to the newsletter archive page displaying past issues.
+- Given I attempt to submit without an email, when I click Submit, then a validation error is displayed.

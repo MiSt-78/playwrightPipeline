@@ -1,0 +1,220 @@
+Priority 1 (critical)
+
+1. Title: Main Banner Links Work
+- Priority: Priority 1 (critical)
+- User Story: "As a visitor, I want to click main banner links so that I reach the expected destinations."
+- Clarification: Main banner links are the prominent featured links displayed in the hero/banner section of the homepage. These include contextual CTAs (calls-to-action) and "Mehr Entdecken" (More Discover) links that highlight key service offerings like AI-driven Software Engineering, GenAI Platforms, customer story links, and solution pages. These are temporary/seasonal banners that showcase current initiatives and solutions.
+- Acceptance Criteria:
+  - Given the homepage is loaded, when I click each main banner link, then the browser navigates to the link's destination.
+  - Given a banner link is clicked, when navigation completes, then the destination page displays the expected heading or URL fragment.
+  - Given all main banner links are iterated, when each is validated, then there are no broken links (HTTP 4xx/5xx) among them.
+
+2. Title: Top Navigation Links
+- Priority: Priority 1 (critical)
+- User Story: "As a visitor, I want to use the top navigation links so that I can reach main site sections quickly."
+- Clarification: Top navigation links are the persistent menu items in the header visible on every page. These include main sections like Industries, Solutions, Partner Ecosystem, Our Work, Our Ideas, Careers, About Us, and Contact. These are structural navigation elements that remain consistent across the site.
+- Acceptance Criteria:
+  - Given the homepage, when I click a top navigation item, then the page navigates to the corresponding section or route.
+  - Given a top nav item leads to an anchor section, when navigated, then the viewport contains the expected section heading.
+  - Given each top nav item is tested, when completed, then no top navigation item returns an error page.
+
+3. Title: Homepage Search
+- Priority: Priority 1 (critical)
+- User Story: "As a content seeker, I want to perform searches so that I can find relevant articles and pages."
+- Clarification: The search functionality allows visitors to query the site for content (articles, insights, solutions, case studies, blog posts, etc.). The search field is typically located in the header and enables keyword-based discovery of relevant pages across the site.
+- Acceptance Criteria:
+  - Given the search field is visible, when I enter a valid query and submit, then a results page is shown.
+  - Given query results are returned, when results are displayed, then at least one result contains the query term in title or snippet.
+  - Given no results for a query, when submitted, then a clear 'no results' message appears.
+
+4. Title: Language Switcher
+- Priority: Priority 1 (critical)
+- User Story: "As an international visitor, I want to switch site language so that content appears in my preferred language."
+- Clarification: The language switcher is a UI control (typically in the header or footer) that enables visitors to change the site's language. Xebia.com supports multiple locales (e.g., German /de/, English /en/, etc.). Switching languages should update the URL path and all visible content to the selected language.
+- Acceptance Criteria:
+  - Given the language selector is visible, when I change language, then visible UI text updates to the selected language.
+  - Given language change, when navigation occurs, then the URL or language indicator reflects the chosen locale.
+  - Given language is switched, when returning to the homepage, then the chosen language persists for that session.
+
+5. Title: Cookie Consent Banner
+- Priority: Priority 1 (critical)
+- User Story: "As a visitor, I want to control cookie consent so that the site respects my privacy choices."
+- Clarification: The cookie consent banner is a modal or overlay that appears on first visit to inform users about cookie usage and request consent. It typically offers options to Accept, Decline, or Manage cookie preferences. The choice should be stored and persist across sessions so the banner does not re-appear for returning visitors with saved preferences.
+- Acceptance Criteria:
+  - Given the homepage is loaded for the first time, then a cookie consent banner is visible.
+  - Given I accept cookies, when I confirm, then the banner is hidden and a consent state is stored (banner not shown on subsequent load).
+  - Given I reject or manage cookies, when I select that option, then the site records the choice and the banner behavior updates accordingly.
+
+6. Title: Contact Form Submission
+- Priority: Priority 1 (critical)
+- User Story: "As a prospective client, I want to submit the contact form so that I can request information or outreach."
+- Clarification: The contact form is a structured form available on the Contact page (/de/about-us/contact/ or similar) that allows visitors to enter their details (name, email, company, message, etc.) to reach out to Xebia. The form should validate required fields and display success/error feedback upon submission.
+- Acceptance Criteria:
+  - Given the contact page is open, when I fill required fields with valid data and submit, then a success confirmation is displayed.
+  - Given required fields are empty, when I attempt to submit, then inline validation errors are shown and submission is blocked.
+  - Given the form is submitted successfully, when confirmation appears, then the page displays contact reference or confirmation text.
+
+7. Title: Footer Links Work
+- Priority: Priority 1 (critical)
+- User Story: "As a visitor, I want footer links to function so that I can access legal and support pages."
+- Clarification: Footer links are persistent navigation elements at the bottom of every page, including sections like Legal, Privacy Statement, Cookie Statement, Accessibility Statement, Sitemap, About Us, Leadership, Life at Xebia, Careers, Newsletters, and social media links. These provide access to support, legal compliance, and secondary content.
+- Acceptance Criteria:
+  - Given the footer is visible, when I click each footer link, then the browser navigates to the expected page without error.
+  - Given external footer links open, when clicked, then they open in a new tab/window as intended.
+
+Priority 2 (important)
+
+8. Title: Job Search Results
+- Priority: Priority 2 (important)
+- User Story: "As a job seeker, I want to search open roles so that I can discover suitable positions."
+- Clarification: The careers/jobs page hosts a listing of open positions at Xebia. Job seekers can filter or search by keywords, location, team, seniority level, or other criteria to find relevant roles. The page may be on xebia.com or link to an external job board (e.g., Workable, Greenhouse).
+- Acceptance Criteria:
+  - Given the careers/jobs page is open, when I enter a keyword or filter and submit, then matching job listings appear.
+  - Given filters applied, when results are shown, then each displayed job matches the filter criteria (location, team, keyword).
+
+9. Title: Job Detail Access
+- Priority: Priority 2 (important)
+- User Story: "As a job seeker, I want to open job details so that I can review role responsibilities and apply."
+- Clarification: Each job listing should have a detail page or modal showing full job description, responsibilities, qualifications, and an Apply button/link. Clicking the job title or a "View Details" link should navigate to the job detail view, potentially on an external applicant tracking system (ATS) or careers portal.
+- Acceptance Criteria:
+  - Given a job listing is visible, when I click its title, then the job detail page opens with job description content.
+  - Given the job detail page, when an apply button/link exists, then clicking it navigates to the application flow or external application URL.
+
+10. Title: Resource Listing Filters
+- Priority: Priority 2 (important)
+- User Story: "As a researcher, I want to filter resources so that I can narrow content by topic or format."
+- Clarification: Resources/Insights pages (e.g., /de/our-ideas/ or similar) display articles, whitepapers, case studies, and research. These pages typically offer filters by topic tags (AI, Cloud, Automation), content format (article, whitepaper, webinar), industry, or date range. Selecting a filter should update the displayed list to show only matching items.
+- Acceptance Criteria:
+  - Given the resources or insights listing, when I apply a tag or filter, then the list updates to show only matching items.
+  - Given multiple filters are combined, when applied, then results reflect the intersection of filters.
+
+11. Title: Resource Download Flow
+- Priority: Priority 2 (important)
+- User Story: "As a visitor, I want to download a resource so that I can access the material offline."
+- Clarification: Some resources (whitepapers, guides, reports, e-books) are available for download, often after providing contact information (email, name, company). A visitor clicks a Download button, which may trigger a modal form or directly initiate a file download (PDF, DOCX, etc.). Success should be indicated via download completion or confirmation message.
+- Acceptance Criteria:
+  - Given a downloadable resource is presented, when I click the download CTA, then the download initiates or a download confirmation appears.
+  - Given a resource requires an email or modal, when provided valid input, then the download becomes available and a confirmation appears.
+
+12. Title: Events Listing Display
+- Priority: Priority 2 (important)
+- User Story: "As an event attendee, I want to view upcoming events so that I can plan to attend."
+- Clarification: The events page lists upcoming webinars, conferences, meetups, and other Xebia-hosted or Xebia-participating events. Events typically display date, time, location, and a brief description. Visitors should be able to click an event to view full details and register or find an external registration link.
+- Acceptance Criteria:
+  - Given the events page is open, then upcoming events are listed with date and location.
+  - Given event details are opened, when I click an event, then the event detail page shows full information and registration link if available.
+
+13. Title: Newsletter Subscription
+- Priority: Priority 2 (important)
+- User Story: "As an interested visitor, I want to subscribe to the newsletter so that I receive updates."
+- Clarification: A newsletter signup form is typically embedded in the footer, sidebar, or a dedicated newsletter page (/de/newsletters/ or similar). Visitors enter their email address and optionally select topics of interest. Submission should validate the email format and display a success confirmation or error message if validation fails.
+- Acceptance Criteria:
+  - Given a newsletter signup form, when I submit a valid email, then a subscription confirmation or success message appears.
+  - Given an invalid email, when submitted, then validation prevents submission and displays an error.
+
+14. Title: Social Share Buttons
+- Priority: Priority 2 (important)
+- User Story: "As a reader, I want to use social share buttons so that I can share pages externally."
+- Clarification: Article pages and resource pages typically include social share icons (LinkedIn, Twitter, Facebook, etc.) that allow readers to share the content on their social networks. Clicking a share button opens a new window or share dialog pre-populated with the page's title, URL, and possibly a description.
+- Acceptance Criteria:
+  - Given a page with social icons, when I click a social share button, then a new window or share dialog opens targeting the correct social platform.
+  - Given the share action opens a new window, when opened, then the share URL includes the current page link.
+
+15. Title: Search Pagination Works
+- Priority: Priority 2 (important)
+- User Story: "As a content consumer, I want pagination in search results so that I can navigate through many results."
+- Clarification: When search results exceed a single page (typically 10-20 items per page), pagination controls (Previous, Next, or page numbers) should appear at the bottom or top of the results. Clicking next/previous or a page number should load and display the corresponding set of results without losing the original search query.
+- Acceptance Criteria:
+  - Given search results exceed a single page, when I click the next page control, then the next set of results loads.
+  - Given I navigate to a later page, when results load, then the displayed items correspond to that page (not the first page).
+
+16. Title: Case Study Detail Navigation
+- Priority: Priority 2 (important)
+- User Story: "As a prospective client, I want to read detailed case studies so that I can understand Xebia's project outcomes."
+- Clarification: Case study pages (within /de/customer-stories/ or similar) showcase real client projects with challenges, solutions, and results. Each case study should display full content including images, metrics, and a call-to-action link (e.g., "Get Started" or "Contact Us"). Navigation between individual case studies should work smoothly without errors.
+- Acceptance Criteria:
+  - Given a case study listing, when I click a specific case study, then the detail page loads with full content and images visible.
+  - Given a case study page is open, when I view the CTA button, then clicking it navigates to the contact or quote request page.
+  - Given multiple case studies are available, when I navigate between them, then each loads without 404 or timeout errors.
+
+17. Title: Partner Logo Links
+- Priority: Priority 1 (critical)
+- User Story: "As a visitor, I want to see and access partner information so that I understand Xebia's integrations and partnerships."
+- Clarification: The Partner Ecosystem page (/de/partners/ or similar) displays partner logos (AWS, Microsoft, Google Cloud, Salesforce, etc.). Each logo should link to the partner's detail page on Xebia's site or directly to the partner's website. All partner links must be functional and lead to correct destinations.
+- Acceptance Criteria:
+  - Given the partner ecosystem page is loaded, when I click each partner logo, then it navigates to the partner's page or external site.
+  - Given an external partner link is clicked, when navigation completes, then the page displays the correct partner information or opens in a new tab.
+  - Given all partner logos are tested, when checked, then none return broken links (HTTP 4xx/5xx).
+
+18. Title: Blog Post Filtering
+- Priority: Priority 2 (important)
+- User Story: "As a content enthusiast, I want to filter blog posts so that I can find articles by topic or date."
+- Clarification: A blog or insights page displays published articles and posts, with optional filters by category (AI, Cloud, Security), date range, or author. Selecting a filter should update the article list to show only matching content, and the filter state should persist while browsing.
+- Acceptance Criteria:
+  - Given the blog/insights page is open, when I apply a category filter, then the article list updates to show only posts matching that category.
+  - Given multiple filters are applied, when both are active, then displayed articles match both filter criteria.
+  - Given a filter is active, when I clear it, then all articles are shown again.
+
+19. Title: Mobile Navigation Menu
+- Priority: Priority 1 (critical)
+- User Story: "As a mobile user, I want to access the navigation menu so that I can browse on small screens."
+- Clarification: On mobile/tablet viewports, the main navigation typically collapses into a hamburger menu icon. Clicking the hamburger should open/close a mobile menu overlay displaying all navigation items. All links in the mobile menu should be clickable and functional.
+- Acceptance Criteria:
+  - Given the site is viewed on a mobile viewport, when I click the hamburger menu icon, then the navigation menu expands and is fully visible.
+  - Given the mobile menu is open, when I click a navigation link, then the page navigates to the correct destination and the menu closes.
+  - Given the mobile menu is open, when I click outside the menu, then it closes.
+
+20. Title: Webinar Registration Form
+- Priority: Priority 2 (important)
+- User Story: "As a prospective attendee, I want to register for webinars so that I can attend Xebia learning events."
+- Clarification: Webinar or event pages feature a registration form where visitors enter name, email, company, and optionally phone or role. The form should validate required fields and display a confirmation or success page after submission, with a confirmation email confirmation.
+- Acceptance Criteria:
+  - Given a webinar registration form, when I fill all required fields with valid data and submit, then a success confirmation page appears.
+  - Given required fields are empty, when I try to submit, then validation errors highlight the empty fields.
+  - Given a duplicate email is submitted, when checked, then appropriate handling (e.g., "already registered" message) is displayed.
+
+21. Title: Industry Solution Pages
+- Priority: Priority 2 (important)
+- User Story: "As a business leader in a specific industry, I want to see tailored solutions so that I can understand Xebia's relevance to my sector."
+- Clarification: Industry-specific landing pages (e.g., /de/industries/banking/, /de/industries/healthcare/) showcase solutions, case studies, and resources tailored to that vertical. Each industry page should load correctly with relevant content and working internal/external links.
+- Acceptance Criteria:
+  - Given an industry page is navigated to, when the page loads, then the industry-specific content and case studies are displayed.
+  - Given industry-specific CTA buttons exist, when clicked, then they navigate to appropriate contact or resource pages.
+  - Given multiple industry pages are tested, when all are accessed, then none return errors or missing content.
+
+22. Title: Team Member Profile Access
+- Priority: Priority 2 (important)
+- User Story: "As someone exploring Xebia's leadership, I want to view team member profiles so that I can connect with specific experts."
+- Clarification: A team or leadership page (/de/team/ or /de/leadership/) displays profiles of Xebia executives and specialists. Each profile should include name, title, photo, brief bio, and possibly LinkedIn or contact links. Clicking a profile should either show detail in a modal or navigate to a dedicated profile page.
+- Acceptance Criteria:
+  - Given the team page is loaded, when I click a team member's profile, then their detailed information is displayed or a detail page opens.
+  - Given a team member profile has a LinkedIn link, when I click it, then it opens the correct LinkedIn profile in a new tab.
+  - Given multiple profiles are viewed, when navigating between them, then content loads without errors.
+
+23. Title: Testimonials and Reviews Display
+- Priority: Priority 2 (important)
+- User Story: "As a prospective client, I want to read client testimonials so that I can see social proof of Xebia's quality."
+- Clarification: Testimonials or reviews section displays client quotes, ratings, and company logos. Testimonials may appear on the homepage, in a dedicated section, or within case studies. All text and links in testimonials should render correctly without truncation or formatting issues.
+- Acceptance Criteria:
+  - Given the testimonials section is visible, when I read multiple testimonials, then all text displays fully without truncation.
+  - Given a testimonial includes a link to a client or case study, when I click it, then the page navigates to the correct destination.
+  - Given testimonials have star ratings, when displayed, then all ratings and visual indicators appear correctly.
+
+24. Title: Video Player Functionality
+- Priority: Priority 2 (important)
+- User Story: "As a viewer, I want to watch embedded videos so that I can access video content (product demos, testimonials, webinars)."
+- Clarification: Videos may be embedded on the homepage hero section, case study pages, solution pages, or dedicated video/media pages. The video player should load, play, pause, and allow full-screen mode. The video should not have broken playback or loading errors.
+- Acceptance Criteria:
+  - Given a video is embedded on a page, when I click the play button, then the video starts playing without lag or errors.
+  - Given a video is playing, when I click the full-screen button, then it expands to full-screen mode.
+  - Given a video has finished playing, when I replay it, then it restarts from the beginning.
+
+25. Title: Accessibility Features
+- Priority: Priority 1 (critical)
+- User Story: "As a user with accessibility needs, I want the site to be accessible so that I can navigate and consume content comfortably."
+- Clarification: Accessibility testing verifies that the site meets WCAG 2.1 AA standards. This includes keyboard navigation (Tab key), heading structure, alt text for images, color contrast, form labels, focus indicators, and screen reader compatibility. Xebia publishes an Accessibility Statement (/de/accessibility-statement/) detailing their commitment.
+- Acceptance Criteria:
+  - Given the site is accessed via keyboard only, when I use Tab key to navigate, then all interactive elements are reachable and usable.
+  - Given images are on a page, when inspected, then all decorative and informational images have appropriate alt text.
+  - Given the site is reviewed for contrast, then text and UI elements meet minimum WCAG AA contrast ratios (4.5:1 for normal text).
+  - Given the site is used with a screen reader, then headings, lists, and landmarks are properly announced.
