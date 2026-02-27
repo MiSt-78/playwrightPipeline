@@ -4,6 +4,9 @@ on:
     branches: [ main, master ]
   pull_request:
     branches: [ main, master ]
+  schedule:
+    # run every three days at 20:00 UTC (GitHub cron uses UTC)
+    - cron: '0 20 */3 * *'
 jobs:
   test:
     timeout-minutes: 60
