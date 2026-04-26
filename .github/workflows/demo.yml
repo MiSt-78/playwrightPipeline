@@ -1,0 +1,34 @@
+name: Workflow Commands Demo
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:   # Erlaubt manuellen Start über die GitHub-UI
+
+jobs:
+  demo:
+    runs-on: ubuntu-latest   # Runner Environment: Ubuntu Linux
+
+    steps:
+      - name: Schritt 1 – Workflow Commands im Log
+        run: |
+          echo "::notice::Das ist eine Notice-Meldung"
+          echo "::warning::Das ist eine Warnung"
+          echo "::debug::Das ist ein Debug-Hinweis"
+
+      - name: Schritt 2 – Umgebungsvariable setzen
+        run: |
+          echo "MEIN_WERT=HelloFromRunner" >> $GITHUB_ENV
+
+      - name: Schritt 3 – Variable aus Schritt 2 nutzen
+        run: |
+          echo "Der Wert ist: $MEIN_WERT"
+
+      - name: Schritt 4 – Output setzen
+        id: mein_step
+        run: |
+          echo "resultat=Erfolg!" >> $GITHUB_OUTPUT
+
+      - name: Schritt 5 – Output aus Schritt 4 lesen
+        run: |
+          echo "Ergebnis: ${{ steps.mein_step.outputs.resultat }}"
